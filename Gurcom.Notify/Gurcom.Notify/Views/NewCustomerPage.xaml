@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Gurcom.Notify.Views.NewCustomerPage"
+             Title="Yeni Müşteri">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Vazgeç" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Kaydet" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Tc No" FontSize="Medium" />
+            <Entry Text="{Binding Item.IdentiyNumber}" d:Text="Tc No Giriniz" FontSize="Small" />
+            <Label Text="Adı" FontSize="Medium" />
+            <Entry Text="{Binding Item.Name}" d:Text="Müşteri Adı Giriniz" FontSize="Small" />
+            <Label Text="Soyadı" FontSize="Medium" />
+            <Editor Text="{Binding Item.Surname}" d:Text="Müşteri Soyadı" FontSize="Small" Margin="0" />
+            <Label Text="Baba Adı" FontSize="Medium" />
+            <Editor Text="{Binding Item.FatherName}" d:Text="Baba Adı giriniz" FontSize="Small" Margin="0" />
+
+            <Label Text="Adres" FontSize="Medium" />
+            <Editor Text="{Binding Item.Address}" d:Text="Adres giriniz" FontSize="Small" Margin="0" />
+
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

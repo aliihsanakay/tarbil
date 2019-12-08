@@ -1,0 +1,35 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.30730.948",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "http://212.175.143.218:5555/ws/BKST_EXT.Services:BKST_EXT_READ_SERVICE?WSDL"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "messageContract": true,
+    "namespaceMappings": [
+      "*, BildirimService"
+    ],
+    "references": [
+      "Newtonsoft.Json, {Newtonsoft.Json, 11.0.2}",
+      "SQLite-net, {sqlite-net-pcl, 1.6.292}",
+      "SQLitePCLRaw.batteries_green, {SQLitePCLRaw.bundle_green, 1.1.13}",
+      "SQLitePCLRaw.batteries_v2, {SQLitePCLRaw.bundle_green, 1.1.13}",
+      "SQLitePCLRaw.core, {SQLitePCLRaw.core, 1.1.13}",
+      "System.Numerics.Vectors, {System.Numerics.Vectors, 4.5.0}",
+      "Xamarin.Essentials, {Xamarin.Essentials, 1.2.0}",
+      "Xamarin.Forms.Core, {Xamarin.Forms, 4.2.0.709249}",
+      "Xamarin.Forms.Platform, {Xamarin.Forms, 4.2.0.709249}",
+      "Xamarin.Forms.Xaml, {Xamarin.Forms, 4.2.0.709249}"
+    ],
+    "sync": true,
+    "targetFramework": "netstandard2.0",
+    "typeReuseMode": "All"
+  }
+}
