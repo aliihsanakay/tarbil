@@ -29,7 +29,7 @@ namespace Gurcom.Notify.Services
                     
                     System.ServiceModel.Security.UserNamePasswordClientCredential credential = bildirimClient.ClientCredentials.UserName;
                     credential.UserName = "Gurkop";
-                    credential.Password = "@Gurkop2017*!";
+                    credential.Password = "";
                 }
                 return bildirimClient;
             }
